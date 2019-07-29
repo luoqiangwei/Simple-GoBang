@@ -12,6 +12,8 @@
 
 ​	·	client_encryption_version is build a decryption classloader to  run it.
 
+​	·	if you want to use encryption client, you need build and run **OutPutEncodedClass** main function. And you can read run.sh/run.bat command to know how to work it.
+
 
 
 ### Development Environment
