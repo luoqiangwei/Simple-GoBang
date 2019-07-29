@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.ovea_y.javase_class15c.controller.MainController">
+   <children>
+      <GridPane layoutX="64.0" layoutY="40.0" maxHeight="800.0" maxWidth="1054.0" minHeight="800.0" minWidth="1054.0" prefHeight="800.0" prefWidth="1054.0" style="-fx-background-image: url( pic/1.jpg); -fx-background-size: 140%;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="286.0" prefWidth="286.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="256.0" prefWidth="256.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="256.0" prefWidth="256.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="256.0" prefWidth="256.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane id="pane" maxHeight="750.0" maxWidth="750.0" minHeight="750.0" minWidth="750.0" prefHeight="750.0" prefWidth="750.0" style="-fx-background-color: WHITE; -fx-opacity: 80%; -fx-background-radius: 20;" GridPane.columnSpan="3" GridPane.rowSpan="4">
+               <GridPane.margin>
+                  <Insets bottom="25.0" left="25.0" top="25.0" />
+               </GridPane.margin>
+            </Pane>
+            <GridPane GridPane.columnIndex="3" GridPane.rowSpan="4">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="200.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                     <GridPane.margin>
+                        <Insets left="50.0" top="40.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="pic/m2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="50.0" top="40.0" />
+                     </GridPane.margin>
+                     <image>
+                        <Image url="pic/m1.png" />
+                     </image>
+                  </ImageView>
+                  <GridPane GridPane.rowIndex="2">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button id="start" fx:id="start" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onStartClick" style="-fx-opacity: 0.7; -fx-background-radius: 10;" text="开  始" textAlignment="RIGHT">
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="70.0" right="70.0" top="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Microsoft YaHei Bold" size="25.0" />
+                           </font>
+                           <textFill>
+                              <RadialGradient centerX="0.48888888888888893" centerY="0.5" radius="0.9186046511627907">
+                                 <stops>
+                                    <Stop color="#0b00fffa" />
+                                    <Stop color="#0b00fffa" offset="0.007662835249042145" />
+                                    <Stop color="#00ffee" offset="0.9923371647509578" />
+                                    <Stop color="#00ffee" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </textFill>
+                        </Button>
+                        <Button fx:id="quit" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onQuitClicked" style="-fx-opacity: 0.7; -fx-background-radius: 10;" text="认  输" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets bottom="20.0" left="70.0" right="70.0" top="20.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font name="Microsoft YaHei Bold" size="25.0" />
+                           </font>
+                           <textFill>
+                              <RadialGradient centerX="0.48888888888888893" centerY="0.5" radius="0.9302325581395348">
+                                 <stops>
+                                    <Stop color="RED" />
+                                    <Stop color="RED" offset="0.007662835249042145" />
+                                    <Stop color="#ffd300" offset="0.9923371647509578" />
+                                    <Stop color="#ffd300" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </textFill></Button>
+                     </children>
+                  </GridPane>
+                  <Label id="ai1" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="AI一号" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Microsoft YaHei" size="25.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.48333333333333334" centerY="0.5" radius="0.8">
+                           <stops>
+                              <Stop color="#ffc103fa" />
+                              <Stop color="#ffc103fa" offset="0.007662835249042145" />
+                              <Stop color="#3f05ff" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <Label id="ai2" alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="AI二号" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Microsoft YaHei" size="25.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="0.4666666666666667" endY="1.0" startX="0.7571428571428571" startY="0.44285714285714284">
+                           <stops>
+                              <Stop color="#a703fffa" />
+                              <Stop color="#0048ff" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
